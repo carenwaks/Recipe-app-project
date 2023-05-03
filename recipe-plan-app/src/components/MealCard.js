@@ -1,6 +1,9 @@
 import React from "react";
 
 function MealCard () {
-    return <h3>Meal card item</h3>
-}
+    return <div>
+        <h3>Meal card item name</h3>
+        <p>meal card image</p>
+    </div>
+}    
 export default MealCard
