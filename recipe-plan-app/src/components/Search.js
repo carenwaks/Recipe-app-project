@@ -3,7 +3,7 @@ import MealCard from "./MealCard";
 
 function Search () {
     
-    return <div className="search-page">
+    return <div className="">
         <h3>Search</h3>
         <form>
             <input type="text" placeholder="Search for simillar recipe by name eg pasta" />

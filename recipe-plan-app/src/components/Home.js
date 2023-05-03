@@ -3,16 +3,15 @@ import MealCard from "./MealCard";
 
 function Home() {
     const [meals, setMeals] = useState([]);
+    const url="https://api.spoonacular.com/recipes/complexSearch?apiKey=c85ed085c85e4c7fa6314c7d9f271307&query=pasta"
   
     useEffect(() => {
-      fetch(
-        "https://api.spoonacular.com/recipes/complexSearch?apiKey=c85ed085c85e4c7fa6314c7d9f271307&query=pasta"
-      )
+      fetch(url)
         .then((r) => r.json())
         .then((data) => setMeals(data.results))
         .catch((error) => console.log(error, "error"));
     }, []);
-  
+    
     return (
       <div className="home-page">
         <h3>Home</h3>
