@@ -8,7 +8,7 @@ function MealCard({ meal }) {
     }
     
     function handleCardDisplay () {
-      <ViewCard />
+      <ViewCard meal={meal}/>
     }
     return (
       <div className="recipe-card">
