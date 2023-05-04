@@ -23,31 +23,40 @@
 }
 
 .home-page{
-  background-color: blueviolet;
+  background-color: rgba(226, 198, 43, 0.575);
   padding: 10px;
+  display: grid;
 }
 
 .search-page{
   background-color: brown;
   padding: 15px;
+  display: flexbox;
 }
 .recipe-card{
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(24, 160, 31, 0.788);
-  padding: 16px;
-  background-color: #4e1e6ec7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.meal-card{
-  margin: 10px;
-  min-height:auto;
-  border-radius: 8px;
-  max-width: 50px;  
+.card-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
+.meal-info {
+  margin-left: 20px;
+}
+
 img{
   border-radius: 5px;
   padding:5px;
-  display: flex;
+  display: block;
+  width:400px;
+  object-fit: cover;
 }
 form {
   position: relative;
@@ -58,4 +67,13 @@ input {
   padding: 10px;
   border-radius: 5px; 
   width: 80%;
+}
+h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
 }

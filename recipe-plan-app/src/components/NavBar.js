@@ -9,8 +9,8 @@ function NavBar () {
     <div className="hero">
     <nav>    
     <ul>
-        <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/">Home</NavLink></li>
-        <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/search">Search</NavLink></li>  
+        <li><NavLink style={({isActive})=>(isActive ?{color:"green"}:{})} to="/">Home</NavLink></li>
+        <li><NavLink style={({isActive})=>(isActive ?{color:"green"}:{})} to="/search">Search</NavLink></li>  
     </ul>
     <button></button>
     </nav>
@@ -21,4 +21,4 @@ function NavBar () {
     </Routes>
     </>)
 }
-export default NavBar
+export default NavBar;

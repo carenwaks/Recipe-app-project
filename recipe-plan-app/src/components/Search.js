@@ -29,9 +29,9 @@ function Search () {
       </form>
       <h3>{search}</h3>
       <div>
-        {meals.map((meal) => (
-          <MealCard key={meal.id} meal={meal} />
-        ))}
+      {meals.map((meal) => (
+            <MealCard key={meal.id} meal={meal} />
+          ))}     
       </div>
     </div>
   );

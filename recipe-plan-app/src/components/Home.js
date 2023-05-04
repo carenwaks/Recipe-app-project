@@ -3,7 +3,7 @@ import MealCard from "./MealCard";
 
 function Home() {
     const [meals, setMeals] = useState([]);
-    // const url="https://api.spoonacular.com/recipes/random?number=10&apiKey=c85ed085c85e4c7fa6314c7d9f271307"
+     //const url="https://api.spoonacular.com/recipes/random?number=10&apiKey=c85ed085c85e4c7fa6314c7d9f271307"
   
     useEffect(() => {
       fetch()
