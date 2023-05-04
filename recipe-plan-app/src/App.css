@@ -49,3 +49,12 @@ img{
   padding:5px;
   display: flex;
 }
+form {
+  position: relative;
+  width: 80%;
+}
+input {
+  font-size: medium;
+  padding: 10px;
+  border-radius: 5px;  
+}
