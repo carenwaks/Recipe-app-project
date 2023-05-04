@@ -1,4 +1,5 @@
 import React from "react";
+import ViewCard from "./ViewCard";
 
 function MealCard({ meal }) {
     // console.log(meal)
@@ -6,9 +7,12 @@ function MealCard({ meal }) {
         return null;
     }
     
+    function handleCardDisplay () {
+      <ViewCard />
+    }
     return (
       <div className="recipe-card">
-        <h4>Try this Out?</h4>
+        <button onClick={handleCardDisplay}>Try this Out?</button>
         <h2>{meal.title}</h2>
         <img src={meal.image} alt={meal.title} />
       </div>

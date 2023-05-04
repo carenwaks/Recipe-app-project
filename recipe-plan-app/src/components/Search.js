@@ -3,7 +3,7 @@ import MealCard from "./MealCard";
 
 function Search () {
   const [search,setSearch] = useState("");
-  const [meal, setMeal] = useState([]);
+  const [meals, setMeals] = useState([]);
 
   function handleSubmit (e) {
     e.preventDefault()
@@ -13,10 +13,9 @@ function Search () {
   function searchRecipe() {
     fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c85ed085c85e4c7fa6314c7d9f271307&query=${search}&number=10`)
       .then((r) => r.json())
-      .then((data) => setMeal(data.results))
+      .then((data) => setMeals(data.results))
   }
-
-  
+  // console.log(meal);  
 
   return (
     <div className="search-page">
@@ -27,17 +26,11 @@ function Search () {
         value={search}
         onChange={(event) => setSearch(event.target.value)}
          />
-        <button>
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png"
-            alt=""
-          />
-        </button>
       </form>
       <h3>{search}</h3>
       <div>
-        {meal.map((recipe) => (
-          <MealCard key={recipe.id} recipe={recipe} />
+        {meals.map((meal) => (
+          <MealCard key={meal.id} meal={meal} />
         ))}
       </div>
     </div>
