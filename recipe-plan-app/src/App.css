@@ -31,3 +31,21 @@
   background-color: brown;
   padding: 15px;
 }
+.recipe-card{
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(24, 160, 31, 0.788);
+  padding: 16px;
+  background-color: #4e1e6ec7;
+}
+.meal-card{
+  margin: 10px;
+  min-height:auto;
+  border-radius: 8px;
+  
+}
+img{
+  border-radius: 5px;
+  padding:5px;
+  display: flex;
+}

@@ -7,7 +7,7 @@ function MealCard({ meal }) {
     }
     
     return (
-      <div>
+      <div className="recipe-card">
         <h2>{meal.title}</h2>
         <img src={meal.image} alt={meal.title} />
       </div>
