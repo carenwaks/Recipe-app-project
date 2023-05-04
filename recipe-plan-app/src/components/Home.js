@@ -3,10 +3,10 @@ import MealCard from "./MealCard";
 
 function Home() {
     const [meals, setMeals] = useState([]);
-    const url="https://api.spoonacular.com/recipes/complexSearch?apiKey=c85ed085c85e4c7fa6314c7d9f271307&query=pasta"
+    //const url="https://api.spoonacular.com/recipes/random?apiKey=c85ed085c85e4c7fa6314c7d9f271307&tag=dessert&number=10"
   
     useEffect(() => {
-      fetch(url)
+      fetch()
         .then((r) => r.json())
         .then((data) => setMeals(data.results))
         .catch((error) => console.log(error, "error"));
@@ -14,17 +14,10 @@ function Home() {
     
     return (
       <div className="home-page">
-        <h3>Home</h3>
-        <form>
-          <input type="text" placeholder="Search for recipe by name eg pasta" />
-          <button>
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png"
-              alt=""
-            />
-          </button>
-        </form>
+        <h2>Home</h2>
+        <h3>What's New</h3>        
         <div>
+          <h4>Try this Out?</h4>
           {meals.map((meal) => (
             <MealCard key={meal.id} meal={meal} />
           ))}

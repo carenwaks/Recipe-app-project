@@ -42,7 +42,7 @@
   margin: 10px;
   min-height:auto;
   border-radius: 8px;
-  
+  max-width: 50px;  
 }
 img{
   border-radius: 5px;

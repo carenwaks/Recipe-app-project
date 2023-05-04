@@ -15,11 +15,11 @@ function Search () {
           })
         .catch((error) => console.log(error, "error"));
     }, []);
-    console.log(meals)
+    // console.log(meals)
 
     return (
       <div className="home-page">
-        <h3>Home</h3>
+        <h3>Search</h3>
         <form>
           <input type="text" placeholder="Search for recipe by name eg pasta" />
           <button>
