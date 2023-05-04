@@ -3,21 +3,22 @@ import MealCard from "./MealCard";
 
 function Home() {
     const [meals, setMeals] = useState([]);
-    //const url="https://api.spoonacular.com/recipes/random?apiKey=c85ed085c85e4c7fa6314c7d9f271307&tag=dessert&number=10"
+    // const url="https://api.spoonacular.com/recipes/random?number=10&apiKey=c85ed085c85e4c7fa6314c7d9f271307"
   
     useEffect(() => {
       fetch()
         .then((r) => r.json())
-        .then((data) => setMeals(data.results))
+        .then((data) => setMeals(data.recipes))
         .catch((error) => console.log(error, "error"));
     }, []);
+
+    
     
     return (
       <div className="home-page">
         <h2>Home</h2>
         <h3>What's New</h3>        
         <div>
-          <h4>Try this Out?</h4>
           {meals.map((meal) => (
             <MealCard key={meal.id} meal={meal} />
           ))}
