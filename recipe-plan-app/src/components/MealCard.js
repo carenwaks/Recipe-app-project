@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ViewCard from "./ViewCard";
+
 
 function MealCard({ meal }) {
   const [selectedMeal, setSelectedMeal] = useState(null);
@@ -22,12 +22,14 @@ function MealCard({ meal }) {
           <button onClick={handleCardDisplay}>Try this Out</button>
         </div>
       </div>
-      {selectedMeal && (
-        <ViewCard
-          meal={selectedMeal}
-          onClose={() => setSelectedMeal(null)}
-        />
-      )}
+      <h3>Instructions</h3>
+      <p>{meal.instructions}</p>
+      <h3>Ingredients</h3>
+      <ul>
+        {meal.ingredients.map((ingredient) => (
+          <li key={ingredient}>{ingredient}</li>
+        ))}
+      </ul>
     </div>
   );
 }

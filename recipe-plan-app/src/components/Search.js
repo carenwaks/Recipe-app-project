@@ -15,7 +15,7 @@ function Search () {
       .then((r) => r.json())
       .then((data) => setMeals(data.results))
   }
-   
+
   function handleCardDisplay ({meal}) {
     return (
       <div>
