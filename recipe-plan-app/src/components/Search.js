@@ -16,6 +16,22 @@ function Search () {
       .then((data) => setMeals(data.results))
   }
   // console.log(meal);  
+  function handleCardDisplay ({meal}) {
+    return (
+      <div>
+      <h3>Instructions</h3>
+      <p>{meal.instructions}</p>
+      <h3>Ingredients</h3>
+      <ul>
+        {meal.ingredients.map((ingredient) => (
+          <li key={ingredient}>{ingredient}</li>
+        ))}
+      </ul>
+      <h3>Description</h3>
+      <p>{meal.description}</p>
+        </div>
+    )
+  }
 
   return (
     <div className="search-page">
@@ -30,7 +46,14 @@ function Search () {
       <h3>{search}</h3>
       <div>
       {meals.map((meal) => (
-            <MealCard key={meal.id} meal={meal} />
+             <div className="card-content">
+            <img src={meal.image} alt={meal.title} />
+            <div className="meal-info">
+              <h2>{meal.title}</h2>
+              <p dangerouslySetInnerHTML={{ __html: meal.summary }}></p>
+              <button onClick={() => handleCardDisplay({meal})}>Try this Out</button>
+            </div>
+          </div>
           ))}     
       </div>
     </div>

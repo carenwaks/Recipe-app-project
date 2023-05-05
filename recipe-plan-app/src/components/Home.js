@@ -3,7 +3,7 @@ import MealCard from "./MealCard";
 
 function Home() {
     const [meals, setMeals] = useState([]);
-     //const url="https://api.spoonacular.com/recipes/random?number=10&apiKey=c85ed085c85e4c7fa6314c7d9f271307"
+    //const url="https://api.spoonacular.com/recipes/random?number=10&apiKey=c85ed085c85e4c7fa6314c7d9f271307"
   
     useEffect(() => {
       fetch()
@@ -17,7 +17,7 @@ function Home() {
     return (
       <div className="home-page">
         <h2>Home</h2>
-        <h3>What's New</h3>        
+        <h3>Check out What's New!</h3>        
         <div>
           {meals.map((meal) => (
             <MealCard key={meal.id} meal={meal} />

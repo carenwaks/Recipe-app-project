@@ -77,3 +77,27 @@ p {
   color: #666;
   margin: 0;
 }
+.nav{
+  background-color: #ccc;
+  color: black;
+  display: flex;
+  justify-content: space-between; 
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem; 
+}
+.nav a {
+  color:darkgoldenrod; 
+   text-decoration: none;
+
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem
+}
+.site-title{
+  font-size: 25px;
+}
