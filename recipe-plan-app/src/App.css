@@ -29,7 +29,7 @@
 }
 
 .search-page{
-  background-color: brown;
+  background-color: rgba(226, 198, 43, 0.575) ;
   padding: 15px;
   display: flexbox;
 }
@@ -45,6 +45,9 @@
   padding: 20px;
   border: 5px solid #0d0f24;
   border-radius: 5px;
+}
+.search-card{
+  display: flex;
 }
 .card-content {
   display: flex;
