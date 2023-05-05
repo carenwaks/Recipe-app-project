@@ -3,7 +3,7 @@ import React, {useState} from "react";
 function MealCard({ meal }) {
   const[likes,setLikes]= useState(0) 
   function handleLike () {
-    setLikes(likes +1)
+    setLikes(likes + 1)
   } 
 
   if (!meal) {

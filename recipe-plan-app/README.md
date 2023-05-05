@@ -31,6 +31,12 @@ br
 ### About
  This gives information on the app
 
+### Like button
+ This gives the user an opportunity to like specific recipes
+
+
+
+
 ## Languages and Frameworks
 - React
 - JSX
