@@ -16,7 +16,7 @@ function Home() {
     
     return (
       <div className="home-page">
-        <h2>Home</h2>
+        <h2>Take your taste buds on a journey with us.</h2>
         <h3>Check out What's New!</h3>        
         <div>
           {meals.map((meal) => (

@@ -33,6 +33,10 @@
   padding: 15px;
   display: flexbox;
 }
+.about-page{
+  background-color: khaki;
+  max-height: max-content;
+}
 .recipe-card{
   display: flex;
   flex-direction: column;

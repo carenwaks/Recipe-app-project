@@ -15,7 +15,7 @@ function Search () {
       .then((r) => r.json())
       .then((data) => setMeals(data.results))
   }
-  // console.log(meal);  
+   
   function handleCardDisplay ({meal}) {
     return (
       <div>
@@ -45,17 +45,10 @@ function Search () {
       </form>
       <h3>{search}</h3>
       <div>
-      {meals.map((meal) => (
-             <div className="card-content">
-            <img src={meal.image} alt={meal.title} />
-            <div className="meal-info">
-              <h2>{meal.title}</h2>
-              <p dangerouslySetInnerHTML={{ __html: meal.summary }}></p>
-              <button onClick={() => handleCardDisplay({meal})}>Try this Out</button>
-            </div>
-          </div>
-          ))}     
-      </div>
+          {meals.map((meal) => (
+            <MealCard key={meal.id} meal={meal} />
+          ))}
+        </div>
     </div>
   );
 }

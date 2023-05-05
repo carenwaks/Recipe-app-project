@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar () {
     return ( <nav className="nav">
-        <NavLink to="/" className=" site-title">Site title</NavLink>
+        <NavLink to="/" className=" site-title">Culinary Connect</NavLink>
         <ul>
             <li >
                 <NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/">Home</NavLink>                
