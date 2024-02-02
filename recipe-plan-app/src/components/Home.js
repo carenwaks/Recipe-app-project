@@ -20,7 +20,7 @@ function Home() {
         <h3>Check out What's New!</h3>        
         <div>
           {meals.map((meal) => (
-            <MealCard key={meal.id} meal={meal} />
+            <MealCard key={meal.id} meal={meal}  id={meal.id}/>
           ))}
         </div>
       </div>

@@ -1,9 +1,11 @@
 import React from "react";
 
+
 function About () {
     return (
         <div className="about-page">
-      <h2>About this app</h2>
+      <h2 >The Culinary Connect</h2>
+      
       <p>Welcome to our recipe app! We're excited to share our love of food and cooking with you. Here are some of the features you can expect:</p>
       <ul>
         <li>A home page that displays recommended new meals</li>
@@ -16,6 +18,8 @@ function About () {
         We're committed to using fresh, high-quality ingredients in all of our recipes, and we're always exploring new flavors and techniques to bring you the best possible culinary experience.
 
         Thank you for choosing our recipe app as your go-to source for delicious and inspiring recipes. We can't wait to see what you create in your kitchen!</p>
+        <br>
+        </br>
     </div>
     )
 }
